@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Images</title>
+    <style>
+        body {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        .image-container {
+            display: flex;
+            overflow-x: scroll; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent images from wrapping to the next line */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Ensure images don't exceed container width */
+            max-height: 100vh; /* Ensure images don't exceed viewport height */
+            margin-right: 10px; /* Add some space between images */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="assets/first.png" alt="Image 1">
+        <img src="assets/second.png" alt="Image 2">
+        <img src="assets/third.png" alt="Image 3">
+        <img src="assets/fourth.png" alt="Image 4">
+    </div>
+
+</body>
+</html>
